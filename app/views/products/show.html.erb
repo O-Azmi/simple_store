@@ -1,0 +1,9 @@
+<h1><%= @product.title %></h1>
+
+ #Conditional statement to only show the description of a product if present.
+<% if @product.description.present? %>
+  <p>Description: <%= @product.description %></p>
+<% end %>
+
+<p>Price: $<%= @product.price %></p>
+<p>Stock Quantity: <%= @product.stock_quantity %></p>
